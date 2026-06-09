@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa rural de pruebas - actividad con Carla</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem 1rem;
+            background-color: #f9f9f9;
+        }
+
+        .feature-item {
+            flex: 1 1 150px;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 2rem 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .reviews {
+            background-color: #f0f0f0;
+            padding: 2rem 1rem;
+        }
+
+        .review {
+            margin-bottom: 1rem;haz que cuando vuleva de las cookies, politica de privacidad y lo legal vuelva a la pagina web de la casa rural
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+
+        .buttons a {
+            padding: 1rem 2rem;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <h1>Casa rural de pruebas - actividad con Carla</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#map">Mapa</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#reviews">Reseñas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen principal -->
+    <section class="main-image">
+        <img src="https://source.unsplash.com/1200x500/?rural,countryside,Cadiz" alt="Casa rural en Cádiz">
+    </section>
+
+    <!-- Bloque de características -->
+    <section id="features" class="features">
+        <div class="feature-item">4 habitaciones</div>
+        <div class="feature-item">Piscina</div>
+        <div class="feature-item">WiFi</div>
+        <div class="feature-item">Barbacoa</div>
+        <div class="feature-item">Cerca de la playa</div>
+        <div class="feature-item">Entorno natural</div>
+    </section>
+
+    <!-- Mapa interactivo -->
+    <section id="map">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.489801876626!2d-6.292801184732046!3d36.52706157997588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dd10e4e7cbbef%3A0x400ebbde490bb20!2sCádiz!5e0!3m2!1ses!2ses!4v1697777777777"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Galería de fotos -->
+    <section id="gallery" class="gallery">
+        <img src="imatges/rural1.jpg" alt="Foto 1">
+        <img src="imatges/rural 2.jpg" alt="Foto 2">
+        <img src="imatges/rural 8.jpg" alt="Foto 3">
+        <img src="imatges/rural 4.jpg" alt="Foto 4">
+        <img src="imatges/rural 5.jpg" alt="Foto 5">
+        <img src="imatges/rural 6.jpg" alt="Foto 6">
+    </section>
+
+    <!-- Reseñas de clientes -->
+    <section id="reviews" class="reviews">
+        <div class="review">
+            <p>"Excelente experiencia, la casa estaba impecable y cerca de todo."</p>
+            <strong>- Ana P.</strong>
+        </div>
+        <div class="review">
+            <p>"Un lugar tranquilo y rodeado de naturaleza. Muy recomendable."</p>
+            <strong>- Carlos M.</strong>
+        </div>
+        <div class="review">
+            <p>"Piscina y barbacoa perfectas para unas vacaciones en familia."</p>
+            <strong>- Laura G.</strong>
+        </div>
+    </section>
+
+    <!-- Botones de contacto -->
+    <section id="contact" class="buttons">
+        <a href="mailto:info@casarural.com">Contactar</a>
+        <a href="https://wa.me/1234567890" target="_blank">Chatear por WhatsApp</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>
+            <a href="./politica-privacidad.html">Política de privacidad</a> |
+            <a href="./aviso-legal.html">Aviso legal</a> |
+            <a href="./cookies.html">Cookies</a>
+        </p>
+        <p>© 2026 Casa rural de pruebas</p>
+    </footer>
+
+</body>
+</html>
